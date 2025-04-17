@@ -216,8 +216,8 @@ document.addEventListener("click", (e) => {
   const monsterIdParts = monsterId.split('_');
   window.parent.postMessage({
     type: "monsterSelected",
-    id: monsterIdParts[0];	,
-	 src: monsterIdParts[1];	
+    id: monsterIdParts[0],
+	 src: monsterIdParts[1]
   }, "*");
 });
 </script>
