@@ -193,6 +193,23 @@
 <script type="module" src="js/bestiary.js"></script>
 <script type="text/javascript" defer src="js/list2.js"></script>
 <script type="text/javascript" defer src="lib/elasticlunr.js"></script>
+<script>
 
+document.addEventListener("click", (e) => {
+  const link = e.target.closest("a.lst__row-inner");
+  if (!link) return;
+
+  const href = link.getAttribute("href");
+  if (!href || !href.startsWith("#")) return;
+
+  const monsterId = href.slice(1); // remove leading "#"
+  const monsterIdParts = monsterId.split('_');
+  window.parent.postMessage({
+    type: "monsterSelected",
+    id: monsterIdParts[0];	,
+	 src: monsterIdParts[1];	
+  }, "*");
+});
+</script>
 </body>
 </html>
