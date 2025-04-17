@@ -193,8 +193,18 @@
 <script type="module" src="js/bestiary.js"></script>
 <script type="text/javascript" defer src="js/list2.js"></script>
 <script type="text/javascript" defer src="lib/elasticlunr.js"></script>
+	<style>
+		.hide-important {
+		  display: none !important;
+		}
+	</style>
 <script>
-
+	
+if (window !== window.parent) { 
+   jQuery('html').addClass('ve-night-mode ve-night-mode--standard');
+	jQuery('.page__header, .page__nav, #tabs-right, .mobile__ve-flex-col.best-ecgen__hidden').addClass('hide-important');
+}
+	
 document.addEventListener("click", (e) => {
   const link = e.target.closest("a.lst__row-inner");
   if (!link) return;
