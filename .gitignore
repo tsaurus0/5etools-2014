@@ -1,6 +1,5 @@
 desktop.ini
 node_modules
-img
 
 # IntelliJ project files
 .idea/
@@ -11,7 +10,7 @@ img
 
 # Misc dev/scripting files
 trash
-trash_in
+trash_in 
 node_
 
 # Generated files
