@@ -2,23 +2,7 @@
 <html lang="en">
 
 <head>
-	
-	<style>
-		.hide-important {
-		  display: none !important;
-		}
-		.in-iframe { }
-		.in-iframe .page__header,
-		.in-iframe .page__nav, 
-		.in-iframe #tabs-right, 
-		.in-iframe .mobile__ve-flex-col.best-ecgen__hidden,
-		.in-iframe #sublistcontainer { display: none !important; }			
-	</style>
-	<script type="text/javascript">
-		if (window !== window.parent) {
-		  document.documentElement.classList.add('ve-night-mode', 've-night-mode--standard', 'in-iframe');
-		}
-	</script>
+
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -207,6 +191,7 @@
 <script type="module" src="js/bestiary.js"></script>
 <script type="text/javascript" defer src="js/list2.js"></script>
 <script type="text/javascript" defer src="lib/elasticlunr.js"></script>
+<script type="text/javascript" defer src="js/plugins/tsaurus-plugin.js"></script>
 	
 <script type="text/javascript">	
 document.addEventListener("click", (e) => {

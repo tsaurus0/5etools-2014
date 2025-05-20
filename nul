@@ -1,2 +1,0 @@
-mv: cannot move 'temp-repo/.' to 'img/.': Device or resource busy
-mv: 'temp-repo/..' and 'img/..' are the same file
